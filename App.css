@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #262a33;
+}
+
+.app {
+  display: flex ;
+  color: white;
+  align-items: center ;
+  justify-content: center;
+font-family: "Comfortaa";
+width: 100%;
+position: absolute;
+top: 15%;
+}
+
+.app-header{
+display: flex;
+align-items: center;
+gap: 2rem;
+}
+
+h3{
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  }
+
+.line{
+  height: 500px;
+  background-color: #fff;
+  width: 1px;
+}
+
+form{
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+padding: 2rem;
+background-color: #1a1d22;
+border-radius: 10px;
+width: 30rem;
+margin-top: 1rem;
+filter: drop-shadow(0px 5px 2px #13161a);
+}
+
+form > label{
+margin: 1rem 0;
+
+}
+
+form > input{
+  width: 100%;
+  padding: 0.8rem 2rem ;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-family: "Comfortaa";
+}
+form > input:focus{
+  outline:2px solid rgb(226, 3, 3);
+}
+
+form > button{
+  margin: 1.5rem 0;
+    padding: 0.8rem 3rem ;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: "Comfortaa";
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #ffd900;
+    color: #070709;
+}
+
+form > button:hover{
+    background-color: #e8c606;
+    transition: 0.4s;
+}
+
+form > input::placeholder{
+ font-size: 1rem;
+ font-family: "Comfortaa";
+}
+
+@media screen and (max-width: 1080px){
+  
+  .app-header{
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem;
+    }
+    .line{
+      display: none;
+    }
+    .app{
+      top: 0;
+    }
+
+    form{
+      width: 33rem;
+      margin-bottom: 2rem ;
+    }
+
+    form > button{
+      width: 100%;
+     }
+
+     form > h3{ 
+      margin: 0 auto;
+     }
+   }
+
+@media screen and (max-width: 720px){
+
+    form{
+      width: 27rem;
+      margin-bottom: 2rem ;
+    }
+
+   
+}
+
+@media screen and (max-width: 480px){
+h3{
+  font-size: 1.4rem;
+}
+form{
+  padding: 2rem;
+  width: 21rem;
+  }
+  form > input{
+    font-size: 0.9rem;  
+  }
+
+  form > input::placeholder{
+    font-size: 0.9rem;  
+   }
+}
+
+
+
+
+
